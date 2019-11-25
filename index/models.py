@@ -24,7 +24,7 @@ class course(models.Model):
 
     
 class student(models.Model):
-    school = models.ForeignKey(school, blank=True, null=True)
+    school = models.ForeignKey(course, blank=True, null=True)
     name = models.CharField(max_length=22)
 
     class Meta:
@@ -34,5 +34,4 @@ class student(models.Model):
 
     def __str__(self):
         return self.name
-
 

@@ -5,8 +5,3 @@ from .models import *
 admin.site.register(school)
 admin.site.register(student)
 admin.site.register(course)
-
-
-
-
-
